@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <main class="site-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <article class="card card-profile">
+            <div class="card-header bg-blue">
+              <div class="row align-center">
+                <div class="col-auto col-img col-lg-12">
+                  <img class="profile-image" src="./images/image-jeremy.png" alt="Jeremy Robson">
+                </div>
+                <div class="col-auto col-lg-12">
+                  <span class="profile-label">Report for</span>
+                  <h1 class="profile-name">Jeremy Robson</h1>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="time-filter" data-time="daily">Daily</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="time-filter active" data-time="weekly">Weekly</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="time-filter" data-time="monthly">Monthly</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-9">
+          <div class="row">
+            <article class="col-12 col-lg-4 card card-activity activity-work">
+              <div class="card-header bg-orange">
+                <img class="card-icon" src="./images/icon-work.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Work</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">5hrs</span>
+                      <span class="time-label time-weekly show">32hrs</span>
+                      <span class="time-label time-monthly">103hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">7hrs</span>
+                      <span class="time-label time-weekly show">36hrs</span>
+                      <span class="time-label time-monthly">128hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-4 card card-activity activity-play">
+              <div class="card-header bg-cyan">
+                <img class="card-icon" src="./images/icon-play.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Play</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">10hrs</span>
+                      <span class="time-label time-monthly">23hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">2hrs</span>
+                      <span class="time-label time-weekly show">8hrs</span>
+                      <span class="time-label time-monthly">29hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-4 card card-activity activity-study">
+              <div class="card-header bg-pink">
+                <img class="card-icon" src="./images/icon-study.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Study</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">0hrs</span>
+                      <span class="time-label time-weekly show">4hrs</span>
+                      <span class="time-label time-monthly">13hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">7hrs</span>
+                      <span class="time-label time-monthly">19hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-4 card card-activity activity-exercise">
+              <div class="card-header bg-green">
+                <img class="card-icon" src="./images/icon-exercise.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Exercise</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">4hrs</span>
+                      <span class="time-label time-monthly">11hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">5hrs</span>
+                      <span class="time-label time-monthly">18hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-4 card card-activity activity-social">
+              <div class="card-header bg-purple">
+                <img class="card-icon" src="./images/icon-social.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Social</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">5hrs</span>
+                      <span class="time-label time-monthly">21hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">3hrs</span>
+                      <span class="time-label time-weekly show">10hrs</span>
+                      <span class="time-label time-monthly">23hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-12 col-lg-4 card card-activity activity-selfcare">
+              <div class="card-header bg-yellow">
+                <img class="card-icon" src="./images/icon-self-care.svg" alt="" aria-hidden="true" />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="activity-name">Self Care</h3>
+                    <button type="button" class="activity-btn">
+                      <img src="./images/icon-ellipsis.svg" aria-hidden="true" alt=""/>
+                    </button>
+                  </div>
+                  <div class="col-auto col-lg-12">
+                    <h2 class="activity-time">
+                      <span class="time-label time-daily">0hrs</span>
+                      <span class="time-label time-weekly show">2hrs</span>
+                      <span class="time-label time-monthly">7hrs</span>
+                    </h2>
+                  </div>
+                  <div class="col col-lg-12">
+                    <div class="activity-previous">
+                      <span class="activity-previous-label">Last Week -</span>
+                      <span class="time-label time-daily">1hr</span>
+                      <span class="time-label time-weekly show">2hrs</span>
+                      <span class="time-label time-monthly">11hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
